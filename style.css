@@ -1,277 +1,218 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    text-decoration: none;
-}
-.main{}
-
-
-.head {
-    border: thin solid red;
-    border: none;
-    background-image: url(./image/imgi_1_NG-en-20250714-TRIFECTA-perspective_1133c85c-2844-4ce9-a1ab-d0d7244351d9_large.png);
-    height: 70vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.5);
-}
-
-.heading {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.net {
-    width: 200px;
-}
-
-.signin {
-    padding: 10px 16px;
-    background-color: #C11119;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-}
-
-.writeup {
-    border: 2px solid red;
-    margin: 100px auto;
-    width: 80%;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.writeup h1 {
-    font-size: 3.2em;
-    font-weight: 1000;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.writeup p {
-    font-size: 1.2em;
-    font-weight: 600;
-
-    color: #fff;
-    margin-bottom: 30px;
-}
-
-.writeup .p1 {
-    font-size: 1em;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-input {
-    width: 350px;
-    border: 1.5px solid rgb(169, 168, 168);
-    background-color: rgba(53, 53, 53, 0.41);
-    border-radius: 3px;
-    padding: 20px;
-}
-
-input::placeholder {
-    color: white;
-    font-size: 1em;
-    font-weight: 400;
-
-}
-
-.gts {
-    width: 160px;
-    padding: 20px;
-    border-radius: 3px;
-    border: none;
-    background-color: #C11119;
-}
-
-.gts a {
-    font-size: 1.2em;
-    font-weight: 600;
-    color: white;
-}
-.main-container {
-
-  
-    margin: auto;
-    background: radial-gradient(ellipse at top, #121A3F, #000000);
-    padding: 40px;
-}
-.main-div{
-    width: 80%;
-    margin: auto;
-    border: 2px solid rgb(255, 127, 80);
-    background-color: aqua;
-    height: 200vh;
-}
-
-
-.next {
-    border: 2px solid red;
-    width: 80%;
-    margin: auto;
-}
-
-.next-wrapper {
-
-    border: 2px solid white;
-    background-color: #111A3E;
-    display: flex;
-    justify-content: space-around;
-    gap: 1em;
-    padding: 40px;
-    margin: auto;
-
-}
-
-.n-box {
-    position: relative;
-    width: 50%;
-    height: 258px;
-    background-color: green;
-    border-radius: 10px;
-}
-
-.num {
-    position: absolute;
-    bottom: -30px;
-}
-
-.num h1 {
-    color: #fff;
-    font-size: 8em;
-
-
-}
-
-.num1 {
-
-  
-}
-
-.num2 {
-   
-}
-
-.num3 {}
-
-.num4 {}
-
-.num5 {}
-
-.num6 {}
-
-.num7 {}
-
-.cardsect {}
-
-.cardsect h1 {
-    padding-left: 180px;
-    font-weight: 600;
-    color: ;
-}
-
-.mcard {
-    border: 2px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    gap: 1em;
-    padding: 10px;
-}
-
-.boxes {
-    position: relative;
-    display: flex;
-    width: 700px;
-    height: 250px;
-    background: linear-gradient(to bottom, #1B1D3B, #20111E);
-    border-radius: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.accordion{
-    border: 2px solid white;
-    margin: auto;
-    width: 80%;
-
-}
-
-
-
-.search{
-    border: 1px solid red;
-    margin: auto;
-}
-.search .p2{
-
-}
-footer{
-    margin-top: 20px;
-}
-.foot{
-    padding: 50px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-
-    gap: 8em;
-}
-footer .p{
-    color: white;
-    text-decoration: underline;
-    padding-left: 45px;
-}
-.fd a{
-   color: #c2c2c2;
-   line-height: 3;
-   text-decoration: underline;
-   font-size: .8em;
-    
-}
-.fd{
-    margin-bottom: 40px;
-}
-.bt{
-    height: 30px;
-    width: 30px;
-}
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .wrapper {
+      width: 80%;
+      margin: auto;
+    }
+
+    .main {
+      background-image: url('./image/imgi_1_NG-en-20250714-TRIFECTA-perspective_1133c85c-2844-4ce9-a1ab-d0d7244351d9_large.png');
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 5%;
+      position: relative;
+    }
+
+    .main::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .head, .writeup {
+      position: relative;
+      z-index: 2;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .net {
+      width: 150px;
+    }
+
+    .signin {
+      padding: 10px 16px;
+      background-color: #C11119;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    .writeup {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .writeup h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .writeup p {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      max-width: 400px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+
+    input::placeholder {
+      color: #fff;
+    }
+
+    .gts, .gts1 {
+      padding: 15px 25px;
+      background-color: #C11119;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 1em;
+    }
+
+    .main-container {
+      background: radial-gradient(ellipse at top, #121A3F, #000000);
+      padding: 40px 5%;
+    }
+
+    .next-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .n-box {
+      flex: 1 1 100px;
+      min-width: 100px;
+      height: 150px;
+      background-color: green;
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .num h1 {
+      color: #fff;
+      font-size: 3em;
+    }
+
+    .cardsect {
+      margin-top: 40px;
+    }
+
+    .cardsect h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .mcard {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .boxes {
+      background: linear-gradient(to bottom, #1B1D3B, #20111E);
+      width: 250px;
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    .accordion {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #111;
+      border-radius: 10px;
+    }
+
+    .accordion p {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .accordion input[type="text"],
+    .accordion .gts1 {
+      display: block;
+      margin: 10px auto;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 40px 5%;
+      background-color: #111;
+    }
+
+    footer .p {
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    .foot {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .fd a {
+      color: #c2c2c2;
+      text-decoration: underline;
+      font-size: 0.8em;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    @media(max-width: 768px) {
+      .heading {
+        gap: 10px;
+      }
+
+      .writeup h1 {
+        font-size: 1.8em;
+      }
+
+      .mcard,
+      .next-wrapper,
+      .foot {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .boxes,
+      .n-box {
+        width: 90%;
+      }
+    }
