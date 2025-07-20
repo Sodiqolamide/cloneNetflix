@@ -639,7 +639,7 @@ background-color: red;
 
 
 footer{
-  border: 2px solid yellow;
+
   display: flex;
   justify-content: space-between;
   gap: 2em;
