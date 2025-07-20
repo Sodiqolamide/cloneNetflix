@@ -67,7 +67,8 @@ a{
 }
 
 .writeup h1 {
-  font-size: 3.2em;
+  font-size: 4em;
+  font-weight: 800;
   margin-bottom: 10px;
 
 }
@@ -90,18 +91,17 @@ a{
   border: none;
   font-size: 1.2em;
   margin-bottom: 20px;
-  padding: 18px;
+  padding: 14px;
   background-color: rgba(44, 43, 43, 0.279);
   border: thin solid rgba(255, 255, 255, 0.351);
 }
 
 .writeup button {
-  padding: 10px 20px;
   border-radius: 5px;
   border: none;
   background-color: red;
   color: white;
-  font-size: 1.4em;
+  font-size: 1em;
   padding: 16px;
 }
 
@@ -257,8 +257,8 @@ padding: 30px;
   justify-content: space-around;
   align-items: center;
   wi
+  
 }
-
 .carousel {
   display: flex;
   width: 100%;
@@ -494,7 +494,7 @@ padding: 30px;
   border: none;
   font-size: 1.2em;
   margin-bottom: 20px;
-  padding: 18px;
+  padding: 15px;
   background-color: rgba(44, 43, 43, 0.279);
   border: thin solid rgba(255, 255, 255, 0.351);
   margin-top: 20px;
@@ -502,10 +502,10 @@ padding: 30px;
 .end-search button{
   border-radius: 5px;
   border: none;
-
+background-color: red;
   color: white;
-  font-size: 1.4em;
-  padding: 16px;
+  font-size: 1.2em;
+  padding: 15px;
 }
 footer{
   border: 2px solid yellow;
