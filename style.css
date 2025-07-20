@@ -105,7 +105,8 @@ a{
   padding: 16px;
 }
 
-< ----media query for header section---->@media (max-width: 1024px) {
+< ----media query for header-section--- >
+@media (max-width: 1024px) {
   .writeup {
     margin: 150px auto;
     width: 90%;
@@ -207,7 +208,7 @@ a{
 .round-edge {
   border-top: 4px solid red;
   border-radius: 50% 50% 0 0;
-  background: radial-gradient(ellipse at top, #141d41, #04070Fj, #04070F);
+  background: radial-gradient(ellipse at top, #141d41, #04070F, #04070F);
 
   height: 10vh;
   margin-top: -100px;
@@ -224,6 +225,7 @@ padding: 30px;
 .main {
   width: 80%;
   margin: auto;
+  
  
 }
 
@@ -258,6 +260,7 @@ padding: 30px;
 }
 
 .carousel {
+  display: flex;
   width: 100%;
   margin: auto;
 }
@@ -336,6 +339,195 @@ padding: 30px;
 }
 
 
-.accord{
-  border: 2px solid red;
+
+.mcard {
+  margin: 40px auto;
+  
+}
+.mcard h1 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.card-con{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardss{
+  position: relative;
+  padding: 20px;
+  width: 330px;
+  height: 280px;
+ background: linear-gradient(to bottom, #1C1A33, #1F1323, #210E17);
+  border-radius: 10px;
+}
+.cardss p{
+  font-size: .8em;
+}
+.cardss h1{
+  margin-bottom: 30px;
+}
+.small{
+  position: absolute;
+  bottom: 15px;
+  left: 240px;
+}
+.smi{
+  width: 80px;
+}
+
+
+
+
+
+
+<----- mquerry for card section ---->
+
+/* For screens up to 1024px (tablets and small laptops) */
+@media screen and (max-width: 1024px) {
+  .card-con {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .cardss {
+    width: 45%;
+  }
+
+  .small {
+    left: 180px;
+  }
+}
+
+/* For screens up to 768px (landscape tablets) */
+@media screen and (max-width: 768px) {
+  .mcard h1 {
+    text-align: center;
+  }
+
+  .card-con {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardss {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .cardss h1 {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+
+  .cardss p {
+    font-size: 0.9em;
+  }
+
+  .small {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .smi {
+    width: 60px;
+  }
+}
+
+/* For screens up to 480px (phones) */
+@media screen and (max-width: 480px) {
+  .cardss {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .cardss h1 {
+    font-size: 1em;
+  }
+
+  .cardss p {
+    font-size: 0.8em;
+  }
+
+  .smi {
+    width: 50px;
+  }
+}
+
+
+.accord h1{
+  font-size: 1.2em;
+  font-weight: 600;
+
+}
+.accordion{
+  width: 30px solid red;
+  
+
+
+}
+.av
+.po{
+  color: black;
+}
+.accordion-item{
+  border: none;
+  background-color: #2D2D2D;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.end-search{
+  width: 80%;
+  margin:100px auto;
+  text-align: center;
+}
+.end-search h1{
+  font-size: 1em;
+}
+.end-search input{
+  width: 60%;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  padding: 18px;
+  background-color: rgba(44, 43, 43, 0.279);
+  border: thin solid rgba(255, 255, 255, 0.351);
+  margin-top: 20px;
+}
+.end-search button{
+  border-radius: 5px;
+  border: none;
+
+  color: white;
+  font-size: 1.4em;
+  padding: 16px;
+}
+footer{
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.foot{
+ 
+  width: 20%;
+}
+
+.end h1{
+  font-size: 1em;
+  color: #757575;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+.foot p a{
+  font-size: .8em;
+  color: #757575;
+  text-decoration: underline;
+  justify-content: left;
+
 }
