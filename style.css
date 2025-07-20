@@ -218,7 +218,7 @@ a{
   margin-top: -30px;
   width: 100%;
 background-color:#04070F;
-padding: 30px;
+
   
 }
 
@@ -236,18 +236,19 @@ padding: 30px;
 }
 
 .carousel-wrapper {
+
   width: 100%;
-  height: 400px;
-  
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .cc {}
 
 .caro-con {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   
 }
 
@@ -256,7 +257,6 @@ padding: 30px;
   gap: 1em;
   justify-content: space-around;
   align-items: center;
-  wi
   
 }
 .carousel {
@@ -267,18 +267,16 @@ padding: 30px;
 
 .movies {
   transition: all 0.3s ease-in-out;
-  width: 50%;
+
 }
 
 .movies:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-
 .direction {
-  background-color: #1A1A1A;
+  background-color: #3a3838;
   width: 30px;
-  height: 150px;
   border-radius: 5px;
   padding: 40px 0px;
 
@@ -381,82 +379,108 @@ padding: 30px;
 
 
 
-
-<----- mquerry for card section ---->
-
-/* For screens up to 1024px (tablets and small laptops) */
-@media screen and (max-width: 1024px) {
-  .card-con {
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-
-  .cardss {
-    width: 45%;
-  }
-
-  .small {
-    left: 180px;
-  }
-}
-
-/* For screens up to 768px (landscape tablets) */
-@media screen and (max-width: 768px) {
-  .mcard h1 {
-    text-align: center;
-  }
-
+/* Phones: ≤ 480px */
+@media (max-width: 480px) {
   .card-con {
     flex-direction: column;
     align-items: center;
   }
 
   .cardss {
-    width: 90%;
-    height: auto;
+    width: 330px; /* fixed width preserved */
     margin-bottom: 20px;
-  }
-
-  .cardss h1 {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-  }
-
-  .cardss p {
-    font-size: 0.9em;
   }
 
   .small {
-    position: static;
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .smi {
-    width: 60px;
+    left: 240px; /* keep original absolute positioning */
   }
 }
 
-/* For screens up to 480px (phones) */
-@media screen and (max-width: 480px) {
+/* Small Tablets: 481px – 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .card-con {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .cardss {
-    padding: 15px;
-    width: 100%;
+    width: 330px;
+    margin-bottom: 20px;
   }
 
-  .cardss h1 {
-    font-size: 1em;
-  }
-
-  .cardss p {
-    font-size: 0.8em;
-  }
-
-  .smi {
-    width: 50px;
+  .small {
+    left: 240px;
   }
 }
+
+/* Medium Devices: 769px – 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-con {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .cardss {
+    width: 330px;
+  }
+
+  .small {
+    left: 240px;
+  }
+}
+
+/* Large Screens: > 1024px */
+@media (min-width: 1025px) {
+  .card-con {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cardss {
+    width: 330px;
+  }
+
+  .small {
+    left: 240px;
+  }
+}
+
+
+.faq-sect {
+   
+}
+.faq-wrap {
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+.faq-title {
+    color: white;
+    padding: 20px 0;
+}
+.accord-colors {
+    background-color: #2D2D2D;
+    color: white;
+}
+.accord-title {
+    border-bottom: thin solid black;
+}
+.accord-title:hover {
+    border-bottom: thin solid black;
+    background-color: #414141;
+}
+.email-input2 {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+ 
+
+
+
 
 
 .accord h1{
@@ -507,11 +531,119 @@ background-color: red;
   font-size: 1.2em;
   padding: 15px;
 }
+
+
+
+
+
+
+
+<---media query for faq ----->
+/* Extra Small Devices: Phones ≤ 480px */
+@media (max-width: 480px) {
+  .faq-wrap {
+    padding: 10px;
+  }
+
+  .accordion-item {
+    margin-bottom: 15px;
+  }
+
+  .end-search {
+    width: 90%;
+    margin: 60px auto;
+  }
+
+  .end-search h1 {
+    font-size: 0.95em;
+    padding: 0 10px;
+  }
+
+  .end-search input {
+    width: 100%;
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  .end-search button {
+    width: 100%;
+    font-size: 1em;
+    padding: 12px;
+  }
+}
+
+/* Small Devices: 481px – 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .faq-wrap {
+    padding: 15px;
+  }
+
+  .end-search {
+    width: 90%;
+    margin: 80px auto;
+  }
+
+  .end-search h1 {
+    font-size: 1em;
+    padding: 0 15px;
+  }
+
+  .end-search input {
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+  .end-search button {
+    width: 100%;
+    font-size: 1.1em;
+  }
+}
+
+/* Medium Devices: 769px – 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .faq-wrap {
+    padding: 20px 40px;
+  }
+
+  .end-search {
+    width: 85%;
+  }
+
+  .end-search input {
+    width: 80%;
+  }
+
+  .end-search button {
+    width: auto;
+  }
+}
+
+/* Large Devices: Desktops > 1024px */
+@media (min-width: 1025px) {
+  .faq-wrap {
+    padding: 30px 80px;
+  }
+
+  .end-search {
+    width: 80%;
+  }
+
+  .end-search input {
+    width: 60%;
+  }
+
+  .end-search button {
+    width: auto;
+  }
+}
+
+
 footer{
   border: 2px solid yellow;
   display: flex;
   justify-content: space-between;
   gap: 2em;
+  margin-bottom: 30px;
 }
 .foot{
  
@@ -531,3 +663,73 @@ footer{
   justify-content: left;
 
 }
+.netflix-footer {
+  color: #757575;
+  font-size: 14px;
+  /* display: block; */
+}
+
+.footer-container {
+  max-width: 1000px;
+
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.footer-lang {
+background: none;
+
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.netflix-country {
+  margin-top: 10px;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.footer-note {
+  font-size: 12px;
+  color: #757575;
+  margin-top: 10px;
+}
+.ll{
+  text-decoration: underline;
+  color: blue;
+}
+
+
+
+<--- media querry for footer section --->
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .foot {
+    width: 100%;
+  }
+
+  .footer-container {
+    padding: 0 10px;
+  }
+
+  .footer-lang {
+    width: 100%;
+  }
+
+  .netflix-country,
+  .footer-note {
+    text-align: left;
+    font-size: 13px;
+  }
+}
+
+
+
